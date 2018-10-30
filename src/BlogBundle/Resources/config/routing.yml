@@ -1,0 +1,23 @@
+#Login
+blog_homepage:
+    path:     /blog
+    defaults: { _controller: BlogBundle:Default:index }
+    
+login:
+    path:     /login
+    defaults: { _controller: BlogBundle:User:login }    
+    
+login_check:
+    path:     /login_check
+    
+logout:
+    path:     /logout
+    
+#Login    
+blog_blog:
+    path:     /blogcat
+    defaults: { _controller: BlogBundle:Default:cat }
+    
+blog_blog2:
+    path:     /blogcat2
+    defaults: { _controller: BlogBundle:Default:cat2 }
