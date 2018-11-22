@@ -1,6 +1,8 @@
 <?php
 
 namespace BlogBundle\Entity;
+use Doctrine\Common\Collections\ArrayCollection;
+
 
 /**
  * Entry
@@ -36,6 +38,14 @@ class Entry
      * @var \BlogBundle\Entity\Category
      */
     private $category;
+    
+    ####################### Afegit
+//    /**
+//     * @var \BlogBundle\Entity\Tag
+//     */
+//    private $tag;
+//    
+    ####################### Afegit
 
     /**
      * @var \BlogBundle\Entity\User
@@ -187,6 +197,28 @@ class Entry
     {
         return $this->category;
     }
+    
+    ####################### Afegit
+    
+//        public function setTag(\BlogBundle\Entity\Tag $tag = null)
+//    {
+//        $this->tag = $tag;
+//
+//        return $this;
+//    }
+//
+//    /**
+//     * Get tag
+//     *
+//     * @return \BlogBundle\Entity\Tag
+//     */
+//    public function getTag()
+//    {
+//        return $this->tag;
+//    }
+//    
+    
+    ####################### Afegit
 
     /**
      * Set user

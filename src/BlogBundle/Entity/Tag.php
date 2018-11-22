@@ -1,6 +1,7 @@
 <?php
 
 namespace BlogBundle\Entity;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * Tag
@@ -22,7 +23,25 @@ class Tag
      */
     private $description;
 
+    protected $entryTag;
+    
+    public function __construct(){
+        $this->entryTag = new ArrayCollection();
+    }
+    
+    ####################### Afegit
 
+    
+    public function __toString(){
+        return $this->name;
+    }
+   
+    ####################### Afegit
+    
+    public function getEntryTag(){
+        return $this->entryTag;
+    }
+    
     /**
      * Get id
      *
@@ -81,4 +100,3 @@ class Tag
         return $this->description;
     }
 }
-

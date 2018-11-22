@@ -1,6 +1,7 @@
 <?php
 
 namespace BlogBundle\Entity;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * Category
@@ -34,7 +35,7 @@ class Category
         return $this->name;
     }
 
-    public function getEntry() {
+    public function getEntries() {
         return $this->entry;
     }
     
